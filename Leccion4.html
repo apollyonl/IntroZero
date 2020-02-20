@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My page web!</title>
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.cs
+s" integrity="sha384-
+Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+   <style>
+ h1, h2 { color: red; }
+ ol li {
+ color: red;
+ }
+ ol > li {
+ color: red;
+ }
+ input[type=text] {
+ background-color: red;
+ }
+ input[type=number] {
+ background-color: yellow;
+ }
+ button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  background-color: green;
+  }
+  button:hover {
+  background-color: orange;
+  }
+  a::before {
+   content: "\21d2 Click here: ";
+   font-weight: bold;
+ }
+ .grid {
+ background-color: green;
+ display: grid;
+ padding: 20px;
+ grid-column-gap: 20px;
+ grid-row-gap: 10px;
+ grid-template-columns: 200px 200px auto;
+ }
+ .grid-item {
+ background-color: white;
+ font-size: 20px;
+ padding: 20px;
+ text-align: center;
+ }
+ .row > div {
+  padding: 20px;
+  background-color: teal;
+  border: 2px solid black;
+  }
+  .alert {
+ margin: 20px;
+ }
+</style>
+
+   <body>
+     <!-- Hipervinculos-->
+    <a href="hello.html">¡ Haz clic aquí!</a>
+    <a href="https://google.com">¡Haz clic aquí!</a>
+    <!-- -->
+    <h2>Table of Contents</h2>
+  <ul>
+  <li><a href="#section1">Section 1</a></li>
+  <li><a href="#section2">Section 2</a></li>
+  <li><a href="#section3">Section 3</a></li>
+  </ul>
+  <h2 id="section1">Section 1</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis mauris nec scelerisque porta. In vitae bibe
+ ndum diam, eu varius felis. Proin pharetra rutrum urna finibus venenatis. Vivamus eu lectus gravida est sollicitudin vehicu
+ la. Vivamus volutpat malesuada est, vel tempus sapien sollicitudin quis. Ut non purus vitae leo varius condimentum ac quis
+ nibh. Sed vehicula ultrices massa, non vulputate ex venenatis suscipit. Morbi sit amet enim vel justo dignissim ultrices qu
+ is eu massa. In fermentum volutpat elit sit amet pharetra. Sed volutpat commodo arcu eu commodo. Praesent in sem pellentesq
+ ue, luctus erat nec, lobortis libero. Mauris posuere ante id facilisis efficitur. Praesent aliquet tincidunt vehicula. Viva
+ mus rhoncus consequat bibendum. Sed tristique bibendum mauris, quis pellentesque nunc dignissim non. Sed consectetur bibend
+ um massa id hendrerit.
+  </p>
+  <h2 id="section2">Section 2</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis mauris nec scelerisque porta. In vitae bibe
+ ndum diam, eu varius felis. Proin pharetra rutrum urna finibus venenatis. Vivamus eu lectus gravida est sollicitudin vehicu
+ la. Vivamus volutpat malesuada est, vel tempus sapien sollicitudin quis. Ut non purus vitae leo varius condimentum ac quis
+ nibh. Sed vehicula ultrices massa, non vulputate ex venenatis suscipit. Morbi sit amet enim vel justo dignissim ultrices qu
+ is eu massa. In fermentum volutpat elit sit amet pharetra. Sed volutpat commodo arcu eu commodo. Praesent in sem pellentesq
+ ue, luctus erat nec, lobortis libero. Mauris posuere ante id facilisis efficitur. Praesent aliquet tincidunt vehicula. Viva
+ mus rhoncus consequat bibendum. Sed tristique bibendum mauris, quis pellentesque nunc dignissim non. Sed consectetur bibend
+ um massa id hendrerit.
+  </p>
+  <h2 id="section3">Section 3</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis mauris nec scelerisque porta. In vitae bibe
+ ndum diam, eu varius felis. Proin pharetra rutrum urna finibus venenatis. Vivamus eu lectus gravida est sollicitudin vehicu
+ la. Vivamus volutpat malesuada est, vel tempus sapien sollicitudin quis. Ut non purus vitae leo varius condimentum ac quis
+ nibh. Sed vehicula ultrices massa, non vulputate ex venenatis suscipit. Morbi sit amet enim vel justo dignissim ultrices qu
+ is eu massa. In fermentum volutpat elit sit amet pharetra. Sed volutpat commodo arcu eu commodo. Praesent in sem pellentesq
+ ue, luctus erat nec, lobortis libero. Mauris posuere ante id facilisis efficitur. Praesent aliquet tincidunt vehicula. Viva
+ mus rhoncus consequat bibendum. Sed tristique bibendum mauris, quis pellentesque nunc dignissim non. Sed consectetur bibend
+ um massa id hendrerit.
+  </p>
+  <!--Etiqueta HTML <datalist>-->
+  <form>
+   <div>
+   <input name="name" type="text" placeholder="Name">
+   <input name="password" type="password" placeholder="Password">
+   </div>
+   <div>
+   Favorite color?
+   <input name="color" type="radio" value="red"> Red
+   <input name="color" type="radio" value="green"> Green
+   <input name="color" type="radio" value="blue"> Blue
+   <input name="color" type="radio" value="other"> Other
+   </div>
+   <div>
+   <input name="country" list="countries" placeholder="Country">
+   <datalist id="countries">
+   <option value="Afghanistan">
+   <option value="Albania">
+   <option value="Algeria">
+   <option value="Andorra">
+   <option value="Angola">
+   <option value="Antigua &amp; Deps">
+   <option value="Argentina">
+   <option value="Armenia">
+   <option value="Australia">
+   <option value="Austria">
+     <option value="Fiji">
+ <option value="Finland">
+ <option value="France">
+ <option value="Gabon">
+ <option value="Gambia">
+ <option value="Japan">
+ <option value="Jordan">
+ <option value="Kazakhstan">
+ <option value="Kenya">
+ <option value="Tunisia">
+ <option value="Turkey">
+ <option value="Turkmenistan">
+ <option value="Tuvalu">
+ <option value="Uganda">
+ <option value="Vietnam">
+ <option value="Yemen">
+ <option value="Zambia">
+ <option value="Zimbabwe">
+ </datalist>
+ </div>
+ </form>
+ <!--Más de CSS -->
+ <ol>
+  <li>list item one</li>
+  <li>list item two</li>
+  <ul>
+  <li>sublist item one</li>
+  <li>sublist item two</li>
+  </ul>
+  <li>list item three</li>
+  </ol>
+  <ul>
+   <li>Second list here</li>
+   <li>another item</li>
+   </ul>
+
+   <form>
+    <input name="name" type="text" placeholder="First Name">
+    <input name="name" type="text" placeholder="Last Name">
+    <input name="name" type="number" placeholder="Age">
+   </form>
+<button>Click me!</button>
+
+<ul>
+ <li><a href="#">one link</a></li>
+ <li><a href="#">another link</a></li>
+ <li><a href="#">third link</a></li>
+ </ul>
+<!---->
+<p>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum sem diam, sagittis al
+iquam risus commodo nec. Morbi et massa ex. Cras tempus felis et egestas lacinia. Aenean fermentum vestib
+ulum sem, at consectetur neque. Donec tempus enim vulputate orci auctor gravida.
+ </p>
+ <!---->
+ ol>
+ <li>list item one</li>
+ <li>list item two</li>
+ <ul>
+ <li>sublist item one</li>
+ <li>sublist item two</li>
+ </ul>
+ <li>list item three</li>
+ </ol>
+<!--Responsive Design @media print-->
+
+<p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
+ <p class="screen-only">This paragraph won't appear when you print this page.</p>
+<!--Media queries-->
+<h1>Welcome to My Web Page!</h1>
+
+<h1></h1>
+<!--Flex Box-->
+<div class="container">
+ <div>A. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>B. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>C. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermen
+tum elit. Aenean ornare porta sagittis.</div>
+ <div>D. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermen
+tum elit. Aenean ornare porta sagittis.</div>
+ <div>E. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermen
+tum elit. Aenean ornare porta sagittis.</div>
+ <div>F. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>G. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>H. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>I. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>J. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>K. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ <div>L. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fermentum elit. Aenean ornare por
+ta sagittis.</div>
+ </div>
+<!--Grid-->
+<div class="grid">
+ <div class="grid-item">1</div>
+ <div class="grid-item">2</div>
+ <div class="grid-item">3</div>
+ <div class="grid-item">4</div>
+ <div class="grid-item">5</div>
+ <div class="grid-item">6</div>
+ <div class="grid-item">7</div>
+ <div class="grid-item">8</div>
+ <div class="grid-item">9</div>
+ <div class="grid-item">10</div>
+ <div class="grid-item">11</div>
+ <div class="grid-item">12</div>
+ </div>
+<!---->
+<div class="container">
+ <div class="row">
+ <div class="col-3">
+ This is a section.
+ </div>
+ <div class="col-3">
+ This is another section.
+ </div>
+ <div class="col-3">
+ This is a third section.
+ </div>
+ <div class="col-3">
+ This is a fourth section.
+ </div>
+ </div>
+ </div>
+ <!---->
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-3 col-sm-6">
+ This is a section.
+ </div>
+ <div class="col-lg-3 col-sm-6">
+ This is another section.
+ </div>
+ <div class="col-lg-3 col-sm-6">
+ This is a third section.
+ </div>
+ <div class="col-lg-3 col-sm-6">
+ This is a fourth section.
+ </div>
+ </div>
+ </div>
+<!--Mensajes de alerta-->
+<div class="container">
+ <div class="alert alert-primary" role="alert">
+ This is an alert message. News!
+ </div>
+ <div class="alert alert-success" role="alert">
+ This is an alert message. Good news!
+ </div>
+ <div class="alert alert-danger" role="alert">
+ This is an alert message. Bad news!
+ </div>
+ </div>
+ <!--Botones-->
+ <div class="container">
+ <button type="button" class="btn btn-primary">Primary</button>
+ <button type="button" class="btn btn-success">Success</button>
+ <button type="button" class="btn btn-danger">Danger</button>
+</div>
+<!---->
+<div>
+ <p>This is a paragraph inside the div.</p>
+ List inside the div:
+ <ul>
+ <li>item one</li>
+ <li>item two</li>
+ <li>item three</li>
+ </ul>
+ </div>
+ <p>This is a paragraph outside the div.</p>
+ List outside the div:
+ <ul>
+ <li>item one</li>
+ <li>item two</li>
+ <li>item three</li>
+ </ul>
+
+
+  </body>
+</html>
